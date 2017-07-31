@@ -3,11 +3,12 @@ const db = require('../db.js')
 
 
 const Apod = db.define('apod', {
-  date: sequelize.STRING,
+  year: sequelize.STRING,
+  month: sequelize.STRING,
+  day: sequelize.STRING,
   explanation: sequelize.TEXT,
   title: sequelize.STRING,
   url: sequelize.STRING,
-
 },
   {
     timestamps: false

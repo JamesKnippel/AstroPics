@@ -13,7 +13,7 @@ app.use(express.static('angular-client'))
    .use(bodyparser.json())
    .use(bodyparser.urlencoded({extended: true}))
    .use(morgan('dev'))
-   .use('/apods', apodrouter)
+   .use('/api', apodrouter)
 
 app.listen(port, ip, () => {
   console.log(`connected on port on port: ${port}`)
