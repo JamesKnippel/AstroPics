@@ -5,5 +5,5 @@ angular.module('starchive')
 
   .component('imageSearch', {
     controller: 'searchController',
-    templateUrl: 'templates/imagesearch.html'
+    templateUrl: '/angular-client/templates/imagesearch.html'
   })

@@ -6,5 +6,5 @@ angular.module('starchive')
 
   .component('app', {
     controller: 'AppControl',
-    templateUrl: 'templates/app.html'
+    templateUrl: '../templates/app.html'
   })
