@@ -1,0 +1,24 @@
+const sequelize = require('sequelize');
+const db = require('../db.js')
+
+
+const Apod = db.define('apod', {
+  date: sequelize.STRING,
+  explanation: sequelize.TEXT,
+  title: sequelize.STRING,
+  url: sequelize.STRING,
+
+},
+  {
+    timestamps: false
+  })
+
+Apod.sync({force: true})
+  .then(() => {
+    console.log('###apod table mounted###')
+  })
+
+
+module.exports = {
+  Apod
+}
