@@ -1,9 +1,17 @@
 angular.module('starchive')
-  .controller('searchController', function(){
-
+  .controller('searchController', function(NasaService){
+    this.grabData = function(query){
+      this.date = {
+        year: 'YYYY',
+        month: 'MM',
+        day: 'DD'
+      }
+      this.dated = Object.values(query).join('-')
+     NasaService.fetchApodByDate(this.dated)
+    }
   })
 
   .component('imageSearch', {
     controller: 'searchController',
-    templateUrl: '/angular-client/templates/imagesearch.html'
+    templateUrl: '../templates/imagesearch.html'
   })

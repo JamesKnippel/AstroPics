@@ -1,8 +1,8 @@
 <div>
   <form>
-  <label> Year: </label> <input type="text">
-  <label> Month: </label> <input type="text"> 
-  <label> Day: </label> <input type="text"> 
-  <input type="submit">
+  <label> Year:  <input type="text" ng-model="$ctrl.date.year"> </label>
+  <label> Month:  <input type="text" ng-model="$ctrl.date.month"> </label>
+  <label> Day:  <input type="text" ng-model="$ctrl.date.day"> </label>
+  <input type="submit" ng-click="$ctrl.grabData($ctrl.date)">
   </form>
 </div>
