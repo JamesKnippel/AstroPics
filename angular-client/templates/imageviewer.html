@@ -1,8 +1,10 @@
 <h1 class="image-view-title">Photo of duh day</h1>
-<div class="image-view" style="display:flex">
+<div class="image-view animated" style="display:flex">
   <img class="image" ng-src="{{$ctrl.rendered.url}}">
-  <span class="explanation">
-    Explanation: {{$ctrl.rendered.explanation}}
+  
+    <span class="container explanation">
+    <h4> Explanation: </h4>
+    <p> {{$ctrl.rendered.explanation}} </p>
   </span>
-
+  
 </div>

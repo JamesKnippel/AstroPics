@@ -2,6 +2,7 @@ angular.module('starchive')
   .controller('searchController', function (NasaService) {
     
     this.grabData = function (query) {
+      $('.shuttlebuttona').addClass('fadeOutRight');
       this.date = {
         year: 'YYYY',
         month: 'MM',
