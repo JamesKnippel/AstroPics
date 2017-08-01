@@ -1,7 +1,8 @@
-<div class="image-view">
-  <h1 class="image-view-title">Photo of duh day</h1>
+<h1 class="image-view-title">Photo of duh day</h1>
+<div class="image-view" style="display:flex">
   <img class="image" ng-src="{{$ctrl.rendered.url}}">
-  <div>Explanation: </div>
-  <div>{{$ctrl.rendered.explanation}}</div>
-  <!-- <img src="$ctrl.dataToShow.url"> -->
+  <span class="explanation">
+    Explanation: {{$ctrl.rendered.explanation}}
+  </span>
+
 </div>

@@ -1,5 +1,6 @@
 angular.module('starchive')
   .controller('searchController', function (NasaService) {
+    
     this.grabData = function (query) {
       this.date = {
         year: 'YYYY',

@@ -1,5 +1,5 @@
 angular.module('starchive')
-  .controller('AppControl', function ($scope, NasaService) {
+  .controller('AppControl', function (NasaService) {
     this.renderData = false;
     setTimeout(()=>{
       console.log(this.renderData)
