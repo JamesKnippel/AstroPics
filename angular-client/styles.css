@@ -40,6 +40,11 @@ html {
     color: #E4F1FE;
 }
 
+.inputfields {
+  display: flex;
+  justify-content: center;
+}
+
 h4 { 
   color: #E4F1FE;
 }
@@ -58,15 +63,30 @@ h4 {
     text-transform: none;
     color: #E4F1FE;
 }
-.image {
+
+  .imagediv {
+    display:flex;
     border-radius: 30px;
+    flex-grow: 3;
+    margin: 0;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+
+.image-view {
+  display:flex;
+  
 }
 
 .explanation {
   border-radius: 30px;
-
+  flex-grow: 1;
+  margin: 0;
+  margin-right: 140px;
+  width: 400px;
 }
-
+ /* type.io      */
 p {
     font-family: "Jura", sans-serif;
     font-size: 21px;
@@ -78,4 +98,9 @@ p {
     letter-spacing: -0.30px;
     word-spacing: -0.10px;
     text-transform: none;
+    padding: 30px;
+}
+
+img {
+  border-radius: 30px
 }

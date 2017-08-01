@@ -1,12 +1,10 @@
-<div class="row">
-  <form>
+<div class="row inputfields">
+  <form ng-submit="$ctrl.grabData($ctrl.date)">
     <div class="input-field col s3">
-
       <input id="icon_prefix" type="text" ng-model="$ctrl.date.year" class="validate">
       <label for="icon_prefix"> Year: </label>
     </div>
     <div class="input-field col s3">
-
       <input id="icon_prefix" type="text" ng-model="$ctrl.date.month" class="validate">
       <label for="icon_prefix"> Month: </label>
     </div>

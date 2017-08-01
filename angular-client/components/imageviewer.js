@@ -1,6 +1,6 @@
 angular.module('starchive')
   .controller('imagecontroller', function(){
-   $('imageflip').addClass('flipInX')
+  //  $('imageflip').addClass('flipInX')
   })
   .component('imageViewer', {
     bindings: {
