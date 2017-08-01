@@ -6,8 +6,8 @@ angular.module('starchive')
         month: 'MM',
         day: 'DD'
       }
-      this.dated = Object.values(query).join('-')
-     NasaService.fetchApodByDate(this.dated)
+      this.dated = Object.values(query).join('')
+     NasaService.fetchApodByDate(JSON.stringify(this.dated))
     }
   })
 
