@@ -5,12 +5,12 @@ module.exports = {
   postApodDB: function (req, res) {
     console.log('req.body is @@@@@', req.body)
     Apod.create({
-      year: req.body.date.substring(0, 4),
-      month: req.body.date.substring(6, 7),
-      day: req.body.date.substring(9, 10),
-      explanation: req.body.explanation,
-      title: req.body.title,
-      url: req.body.url,
+      year: req.body.data.date.substring(0, 4),
+      month: req.body.data.date.substring(6, 7),
+      day: req.body.data.date.substring(9, 10),
+      explanation: req.body.data.explanation,
+      title: req.body.data.title,
+      url: req.body.data.url,
     })
       .then((data) => {
         res.status(201).send(data)
@@ -18,11 +18,12 @@ module.exports = {
   },
 
   // getApodDB: function (req, res) {
+  //   console.log(req.params, 'are paraaaaaams')
   //   Apod.findOne({
   //     where: {
-  //       year: req.body.date.substring(0, 4),
-  //       month: req.body.date.substring(6, 7),
-  //       day: req.body.date.substring(9, 10),
+  //       year: req.params.date.substring(0, 4),
+  //       month: req.params.date.substring(6, 7),
+  //       day: req.params.date.substring(9, 10),
   //     }
   //   })
   //     .then((data)=>{

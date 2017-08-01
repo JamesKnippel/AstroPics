@@ -1,5 +1,5 @@
 <div>
    <h4> Welcome to the Starchives </h4>
-  <image-viewer></image-viewer>
-  <image-search></image-search>
+  <image-viewer rendered="$ctrl.renderData" ng-if=$ctrl.renderData></image-viewer>
+  <image-search data="$ctrl.renderData"></image-search>
 </div>

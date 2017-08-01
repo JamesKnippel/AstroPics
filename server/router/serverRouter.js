@@ -4,7 +4,7 @@ const apodController = require('../controller/serverController')
 router.route('/apods/imports')
   .post(apodController.postApodDB)
 
-router.route('/apods/:info')
+router.route('/apods/:date')
   // .get(apodController.getApodDB) 
   .get(apodController.getAllApods)
   
