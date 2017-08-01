@@ -8,7 +8,7 @@ const Apod = db.define('apod', {
   day: sequelize.STRING,
   explanation: sequelize.TEXT,
   title: sequelize.STRING,
-  url: sequelize.STRING,
+  hdurl: sequelize.STRING,
 },
   {
     timestamps: false

@@ -10,7 +10,7 @@ module.exports = {
       day: req.body.data.date.substring(9, 10),
       explanation: req.body.data.explanation,
       title: req.body.data.title,
-      url: req.body.data.url,
+      hdurl: req.body.data.hdurl,
     })
       .then((data) => {
         res.status(201).send(data)

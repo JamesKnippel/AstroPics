@@ -2,6 +2,8 @@
 
 body {
   background: url('./pics/nebula.jpg');
+  /* cursor: url(''), default; */
+
 
 }
 
@@ -11,7 +13,8 @@ body {
 
 .shuttlebutton {
   line-height: 5.91;
-  margin: 0 0 0 33px;
+  /* margin: 0 0 0 33px; */
+  margin-left: 625px;
 }
 
 .btn { 
@@ -43,11 +46,43 @@ html {
 .inputfields {
   display: flex;
   justify-content: center;
+  padding: 15px;
 }
 
 h4 { 
   color: #E4F1FE;
 }
+
+.maintitle {
+  margin-left: 720px;
+}
+
+  .image {
+    width: 85%;
+    margin-left: 100px;
+    max-height: 700px;
+  }
+
+  .imagediv {
+    display:flex;
+    border-radius: 30px;
+    flex-grow: 3;
+    margin: 0;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.image-view {
+  display:flex;
+  align-items: stretch;
+}
+
+.image-view-title{
+  margin-left: 500px
+}
+
+
 .explanation {
   padding: 15px;
   background-color:#2C3E50;
@@ -62,30 +97,16 @@ h4 {
     word-spacing: -0.10px;
     text-transform: none;
     color: #E4F1FE;
-}
-
-  .imagediv {
-    display:flex;
     border-radius: 30px;
-    flex-grow: 3;
+    flex-grow: 1;
     margin: 0;
+    margin-right: 140px;
     width: 400px;
-    align-items: center;
-    justify-content: center;
-  }
-
-.image-view {
-  display:flex;
-  
+    max-height: 700px;
+    justify-content: space-between;
+    overflow: auto;
 }
 
-.explanation {
-  border-radius: 30px;
-  flex-grow: 1;
-  margin: 0;
-  margin-right: 140px;
-  width: 400px;
-}
  /* type.io      */
 p {
     font-family: "Jura", sans-serif;
@@ -103,4 +124,5 @@ p {
 
 img {
   border-radius: 30px
+
 }
