@@ -1,0 +1,19 @@
+.image-view-title {
+    margin-top: 0;
+    font-weight: 600;
+    border-bottom: 4px double #24b662;
+  	border-radius: 25px;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 350px;
+	  margin-bottom: 30px;
+}
+
+
+img {
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+}
+
